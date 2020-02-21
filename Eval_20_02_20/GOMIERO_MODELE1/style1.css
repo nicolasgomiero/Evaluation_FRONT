@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    width: 100vw;
+    height: 20vh;
+}
+
+section
+{
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+}
+
+article{
+    height: 60vh;
+    width: 70vw;
+    order: 1;
+}
+
+aside{
+    height: 60vh;
+    width: 15vw;
+    order: 2;
+}
+
+nav{
+    height: 60vh;
+    width: 15vw;
+    order: 3;
+}
+
+footer{
+    width: 100vw;
+    height: 20vh;
+}

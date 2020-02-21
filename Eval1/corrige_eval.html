@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Au bon resto</title>
+    <link rel="stylesheet" href="corrige_style.css">
+</head>
+<body>
+    <header>
+        <span id="nosmenus">NOS MENUS</span>
+        <a href="#"><img src="images/logo.png" height="80" width="80" alt="Logo Au bon resto"/></a>
+        <span id="reservations">RESERVATIONS</span>
+    </header>
+    <section id="cadreA">
+        <p>Au Bon Resto</p>
+        <button class="button"><span>Consultez nos menus</span></button>
+    </section>
+    <section id="cadreB">
+        <div id="titreCadre">
+            <span>NOS MENUS</span>
+        </div>
+        <div id="listeMenu">
+            <article id="entrees">
+                <p class="titreMenu">ENTREES : </p>
+                <p>Entree 1 ........... 0.0€</p>
+                <p>Entree 2 ........... 0.0€</p>
+                <p>Entree 3 ........... 0.0€</p>
+                <p>Entree 4 ........... 0.0€</p>
+                <p>Entree 5 ........... 0.0€</p>
+            </article>
+            <article id="plats">
+                <p class="titreMenu">PLATS : </p>
+                <p>Plat 1 ........... 0.0€</p>
+                <p>Plat 2 ........... 0.0€</p>
+                <p>Plat 3 ........... 0.0€</p>
+                <p>Plat 4 ........... 0.0€</p>
+                <p>Plat 5 ........... 0.0€</p>
+            </article>
+            <article id="desserts">
+                <p class="titreMenu">DESSERTS : </p>
+                <p>Dessert 1 ........... 0.0€</p>
+                <p>Dessert 2 ........... 0.0€</p>
+                <p>Dessert 3 ........... 0.0€</p>
+                <p>Dessert 4 ........... 0.0€</p>
+                <p>Dessert 5 ........... 0.0€</p>
+            </article>
+        </div>
+    </section>
+    <section id="cadreC">
+        <div id="cadreC1"></div>
+        <div id="cadreC2">
+            <form onsubmit="return false;">
+                <ul>
+                    <li>
+                        <label for="name">Nom : </label>
+                        <input id="name" type="text" size="20" minlength="3" maxlength="30"><br/>
+                        <span class="tooltip">Un nom ne doit pas faire moins de trois caractères</span>
+                    </li>
+                    <li>
+                        <label for="prenom">Prenom : </label>
+                        <input id="prenom" type="text" size="20" minlength="3" maxlength="30"><br/>
+                        <span class="tooltip">Un prénom ne doit pas faire moins de trois caractères</span>
+                    </li>
+                    <li>
+                        <label for="tel">Téléphone : </label>
+                        <input id="tel" type="tel" pattern="^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$" size="20"><br/>
+                    </li>
+                    <li>
+                        <label for="mail">Email : </label>
+                        <input id="mail" type="email" size="20" minlength="3"><br/>
+                        <span class="tooltip">Un numéro de téléphone ou une adresse email doit être saisie.</span>
+                    </li>
+                    <li>
+                        <label for="objet">Objet : </label>
+                        <input id="objet" type="text">
+                    </li>
+                    <li>
+                        <label for="message">Message : </label>
+                        <textarea id="message" rows="5"></textarea>
+                    </li>
+                    <li>
+                        <button class="button" id="libouton" type="submit">Envoyer</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </section>
+
+<script src="corrige_script.js"></script>
+</body>
+</html>
